@@ -1,0 +1,108 @@
+body {
+ /* background: rgb(238,174,202);  */
+  background: radial-gradient(circle, rgb(108, 189, 42) 0%, rgba(148,187,233,1) 100%); 
+}
+
+ .formContainer {
+   height: 100vh;  /* vh　は高さの定義100％と同じ意味である  */
+   width: 100%;
+   display: flex;        /*　整列 */
+   align-items: center;  /* 縦位置を中央　*/
+   justify-content: center;  /* 横位置を中央　*/
+   
+  }
+
+  h1 {
+    text-align: center;    /*　PMツール　の文字を中央 */
+    color: #f321bf; 
+    font-size: 50px;
+  }
+
+  p1 {
+    text-align: center;    /*　メッセージを　の文字を中央 */
+    color: black; 
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  hr {                     /*　パスワード変更の下に線を表示する */
+    height: 3px;
+    background-color: #17d6c6;
+    border: none;
+   
+    }
+
+
+  .uiForm {
+   display: flex;        /*　整列 */
+   flex-direction: column;     /*　上下に配置　*/
+   align-items: center;  
+   justify-content: center; 
+   height: 300px;   
+  }
+
+
+  .formContainer form {
+
+   background-color: rgb(221, 223, 215);
+   width: 70%;
+   max-width: 700px;   /*　横幅の最大値を決める　*/
+   padding: 20px;     /*  ログインフォームの余白を指定する */
+   border-radius: 5%;  /* 左上、左下、右上、右下の角を丸くする */
+   border: 3px solid #75925d ;  /*  ログインフォームの枠線の大きさを指定 */
+   box-shadow: 23px 14px 61px -20px #64fb13;  /*　ログインフォームに影をつける */
+  }
+
+ .formFiled1 {
+   display: flex;        /*　整列 */
+   flex-direction: column;     /*　上下に配置　*/
+   /* align-items: center;    */
+   /* justify-content: center; */ 
+   height: 80px;   
+  
+  }
+
+ .formFiled1 label {
+  font-size: 20px;
+
+  }
+
+  .formFiled1 input {
+    width: 400px;
+    border: 2px solid grey;    /*入力欄の枠線 */
+    padding: 10px;               /*入力欄のサイズ */
+   /* -webkit-text-security: disc;  /* 入力文字を非表示 */
+  }
+
+  .formFiled2 {
+    display: flex;        /*　整列 */
+    flex-direction: column;     /*　上下に配置　*/
+    /* align-items: center;    */
+    /* justify-content: center; */ 
+    height: 80px;   
+   
+   }
+
+   .formFiled2 label {
+    font-size: 20px;
+  
+    }  
+  
+    .formFiled2 input {
+      width: 400px;
+      border: 2px solid grey;    /*入力欄の枠線 */
+      padding: 10px;               /*入力欄のサイズ */
+      -webkit-text-security: disc;  /* 入力文字を非表示 */
+    }
+
+
+  .submitButton {
+    display:flex;
+    align-items: center;       /*　「ログイン」の文字を縦位置を中央  */
+    justify-content: center;     /*　「ログイン」の文字の横位置を中央  */
+    width: 100px; 
+    height: 50px;     
+    font-size: larger;
+    border-color: rgb(17, 3, 3);
+    margin:0 auto;              /*　　ボタンの位置を中央  */
+  } 
